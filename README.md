@@ -24,6 +24,13 @@ pip install -e .
 gemini extensions install .
 ```
 
+### 🗑️ Uninstallation
+
+```bash
+gemini extensions uninstall ralph-gemini-cli
+pip uninstall ralph-gemini-cli
+```
+
 -----
 
 ## 🚀 How to Use (The "Ralph Loop")
