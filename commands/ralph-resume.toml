@@ -1,0 +1,21 @@
+description = "Resume a stopped Ralph loop."
+prompt = """
+I will resume the stopped Ralph loop and continue the task.
+
+1. **Resume the loop** using the Shell tool:
+   ```bash
+   python -m ralph_loop.cli resume
+   ```
+
+2. **Check the status** to get the original prompt and progress:
+   ```bash
+   python -m ralph_loop.cli status
+   ```
+
+3. **Read the state file** to see the full history:
+   ```bash
+   cat .gemini/ralph-loop.local.md
+   ```
+
+4. **Continue working** on the task described in the state file.
+"""

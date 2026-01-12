@@ -1,0 +1,14 @@
+description = "Check the status of the current Ralph loop."
+prompt = """
+Check the Ralph loop status by running:
+```bash
+python -m ralph_loop.cli status
+```
+
+Report the current status to the user including:
+- Whether the loop is active
+- Current iteration number
+- Max iterations (if set)
+- Completion promise (if set)
+- The task prompt
+"""

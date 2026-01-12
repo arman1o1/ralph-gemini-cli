@@ -1,0 +1,11 @@
+description = "View Ralph loop iteration history."
+prompt = """
+I will retrieve and summarize the iteration history for the current Ralph loop.
+
+1. **Run the history command** using the Shell tool:
+   ```bash
+   python -m ralph_loop.cli history
+   ```
+
+2. **Summarize the accomplishments** to the user, highlighting the progress made in each iteration.
+"""

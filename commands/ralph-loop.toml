@@ -1,0 +1,33 @@
+description = "Start a Ralph iterative development loop for self-referential task completion."
+prompt = """
+You are initiating a Ralph loop - an iterative, self-referential development methodology.
+
+**IMPORTANT:** First, run the setup command to create the loop state file:
+```bash
+python -m ralph_loop.cli start $ARGUMENTS
+```
+
+The command accepts these arguments:
+- The task prompt (required) - what you want to accomplish
+- `--max-iterations <n>` or `-m <n>` - Stop after N iterations (default: unlimited)
+- `--completion-promise '<text>'` or `-p '<text>'` - Phrase that signals completion
+
+**Examples:**
+```bash
+python -m ralph_loop.cli start "Build a REST API" --max-iterations 20
+python -m ralph_loop.cli start "Fix the auth bug" --completion-promise "DONE"
+```
+
+**After running the command:**
+1. Read the state file at `.gemini/ralph-loop.local.md` to understand your task
+2. Work on the task iteratively
+3. Each iteration, check your progress and continue improving
+4. If a completion promise is set, output `<promise>YOUR_PHRASE</promise>` when genuinely complete
+
+**CRITICAL RULES:**
+- Do NOT output a false completion promise to exit the loop
+- Trust the iterative process - keep improving until the task is genuinely complete
+- Check `.gemini/ralph-loop.local.md` for current iteration count and settings
+
+**To cancel the loop:** Use `/ralph-cancel` command
+"""
