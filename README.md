@@ -11,7 +11,8 @@
 ### Option 1: Install from GitHub (Recommended)
 
 ```bash
-gemini extensions install github.com/arman1o1/ralph-gemini-cli
+gemini extensions install https://github.com/arman1o1/ralph-gemini-cli
+pip install git+https://github.com/arman1o1/ralph-gemini-cli.git
 ```
 
 ### Option 2: Install from Source
@@ -20,7 +21,7 @@ gemini extensions install github.com/arman1o1/ralph-gemini-cli
 git clone https://github.com/arman1o1/ralph-gemini-cli.git
 cd ralph-gemini-cli
 pip install -e .
-gemini extensions install . --auto-update
+gemini extensions install .
 ```
 
 -----
